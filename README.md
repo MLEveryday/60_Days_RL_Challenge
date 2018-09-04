@@ -27,9 +27,9 @@
 
 ## 第一周 - 强化学习介绍
 
- - #### [An introduction to Reinforcement Learning](https://www.youtube.com/watch?v=JgvyzIkgxF0) by Arxiv Insights
- - #### [Introduction and course overview](https://www.youtube.com/watch?v=Q4kF8sfggoI&index=1&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) - CS294 by Levine
- - #### [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/) by Karpathy
+ - #### [强化学习简介](https://space.bilibili.com/253856984/#/)
+ - #### [强化学习课程CS294](https://space.bilibili.com/23852932/#/)
+ - #### [强化学习：像素乒乓大战](http://ju.outofmemory.cn/entry/319445)
 
 ## 第二周 - 强化学习基础: *MDP, Dynamic Programming and Model-Free Control*
 
@@ -90,9 +90,9 @@
 ## Last 4 days - Review + sharing
 
 
-## 最佳强化学习论文
+## 强化学习论文
 
-## 最佳强化学习资源
+## 强化学习资源
 
 :tv: [Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) - UC Berkeley class by Levine, check [here](http://rail.eecs.berkeley.edu/deeprlcourse/) their site.
 
