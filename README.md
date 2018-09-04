@@ -1,7 +1,7 @@
 # 强化学习60天
 [英文地址](https://github.com/andri27-ts/60_Days_RL_Challenge)
 
-### 我为了你和我设计这个挑战：在这60天里深入学习“深度强化学习”。
+### 我为了你我设计这个挑战：在这60天里深入学习“深度强化学习”。
 你肯定听说过 [Deepmind with AlphaGo Zero](https://www.youtube.com/watch?time_continue=24&v=tXlM99xPQC8) 和
 [OpenAI in Dota 2](https://www.youtube.com/watch?v=l92J1UvHf6M) 取得的惊人成绩！
 你难道不想知道他们是如何工作的吗？现在正是你我最终学会“深度强化学习”，并应用到已有项目的时机。
