@@ -57,13 +57,13 @@
    - 策略迭代
    - 价值迭代
 
- - #### `英文`|`优酷`[无模型预测(Model-Free Prediction)](https://v.youku.com/v_show/id_XMjcwMDc2NjYwOA==.html?spm=a2h0j.11185381.listitem_page1.5~A&&f=49376145) - RL by David Silver
+ - #### `中文`|`优酷`[无模型预测(Model-Free Prediction)](https://v.youku.com/v_show/id_XMjcwMDc2NjYwOA==.html?spm=a2h0j.11185381.listitem_page1.5~A&&f=49376145) - RL by David Silver
    评估无模型马尔科夫决策过程的价值函数
    - 蒙特卡罗学习
    - 时间差分学习
    - TD(λ)
 
- - #### `英文`|`优酷`[无模型约束(Model-Free Control)](https://v.youku.com/v_show/id_XMjcwNDA5NzIwOA==.html?spm=a2h0j.11185381.listitem_page1.5!5~A&&f=49376145) - RL by David Silver
+ - #### `中文`|`优酷`[无模型约束(Model-Free Control)](https://v.youku.com/v_show/id_XMjcwNDA5NzIwOA==.html?spm=a2h0j.11185381.listitem_page1.5!5~A&&f=49376145) - RL by David Silver
    优化无模型卡尔科夫决策过程价值函数
    - Ɛ贪婪策略迭代
    - GLIE蒙特卡罗搜索
