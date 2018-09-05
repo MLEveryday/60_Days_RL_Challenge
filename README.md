@@ -1,11 +1,11 @@
-![](https://github.com/andri27-ts/60_Days_RL_Challenge/blob/master/images/logo5.png)
+![](images/logo5.png)
 
 # 强化学习60天
 [英文地址](https://github.com/andri27-ts/60_Days_RL_Challenge)
 
 ### 我为了你我设计这个挑战：在这60天里深入学习“深度强化学习”。
-你肯定听说过 [Deepmind with AlphaGo Zero](https://www.youtube.com/watch?time_continue=24&v=tXlM99xPQC8) 和
-[OpenAI in Dota 2](https://www.youtube.com/watch?v=l92J1UvHf6M) 取得的惊人成绩！
+你肯定听说过 [Deepmind with AlphaGo Zero](https://www.bilibili.com/video/av29385179) 和
+[OpenAI in Dota 2](https://www.bilibili.com/video/av29385428) 取得的惊人成绩！
 你难道不想知道他们是如何工作的吗？现在正是你我最终学会“深度强化学习”，并应用到已有项目的时机。
 
 > 终极目标是使用这些多功能的技术，并应用他们到各种重要的真实世界问题中。**Demis Hassabis**
@@ -36,6 +36,7 @@
  - #### `中文`|`bilibili`[强化学习简介(An introduction to Reinforcement Learning)](https://www.bilibili.com/video/av30055826) by Arxiv Insights
  - #### `英文字幕`|`bilibili`[强化学习课程CS294(Introduction and course overview)](https://www.bilibili.com/video/av20957290) by Levine
  - #### `中文`[强化学习：像素乒乓大战(Deep Reinforcement Learning: Pong from Pixels)](http://ju.outofmemory.cn/entry/319445) by Karpathy
+ - #### `中文`|`优酷`[强化学习简介(Introduction to Reinforcement Learning)](https://v.youku.com/v_show/id_XMjcwMDQyOTcxMg==.html?spm=a2h0j.11185381.listitem_page1.5!4~A&&f=49376145) - RL by David Silver
 
 ## 第二周 - 强化学习基础：马尔可夫决策过程，动态规划与无模型控制
 
@@ -46,23 +47,23 @@
 
 ### 理论材料
 
- - #### `英文`|`youtube`[马尔科夫决策过程((Markov Decision Process)](https://www.youtube.com/watch?v=lfHX2hHRMVQ&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-&index=2) - RL by David Silver
+ - #### `中文`|`优酷`[马尔科夫决策过程(Markov Decision Process)](https://v.youku.com/v_show/id_XMjcwMDU5ODEyOA==.html?spm=a2h0j.11185381.listitem_page1.5!3~A&&f=49376145) - RL by David Silver
    马尔科夫决策过程定义强化学习问题
    - 马尔科夫过程
    - 马尔科夫决策过程
 
- - #### `英文`|`youtube`[动态规划设计(Planning by Dynamic Programming)](https://www.youtube.com/watch?v=Nd1-UUMVfz4&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-&index=3) - RL by David Silver
+ - #### `中文`|`优酷`[动态规划设计(Planning by Dynamic Programming)](https://v.youku.com/v_show/id_XMjcwMDY1MDI1Mg==.html?spm=a2h0j.11185381.listitem_page1.5!2~A&&f=49376145) - RL by David Silver
    如何解决马尔科夫决策问题
    - 策略迭代
    - 价值迭代
 
- - #### `英文`|`youtube`[无模型预测(Model-Free Prediction)](https://www.youtube.com/watch?v=PnHCvfgC_ZA&index=4&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-) - RL by David Silver
+ - #### `英文`|`优酷`[无模型预测(Model-Free Prediction)](https://v.youku.com/v_show/id_XMjcwMDc2NjYwOA==.html?spm=a2h0j.11185381.listitem_page1.5~A&&f=49376145) - RL by David Silver
    评估无模型马尔科夫决策过程的价值函数
    - 蒙特卡罗学习
    - 时间差分学习
    - TD(λ)
 
- - #### `英文`|`youtube`[无模型约束(Model-Free Control)](https://www.youtube.com/watch?v=0g4j2k_Ggc4&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-&index=5) - RL by David Silver
+ - #### `英文`|`优酷`[无模型约束(Model-Free Control)](https://v.youku.com/v_show/id_XMjcwNDA5NzIwOA==.html?spm=a2h0j.11185381.listitem_page1.5!5~A&&f=49376145) - RL by David Silver
    优化无模型卡尔科夫决策过程价值函数
    - Ɛ贪婪策略迭代
    - GLIE蒙特卡罗搜索
