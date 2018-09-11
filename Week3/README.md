@@ -1,10 +1,10 @@
-# DQN, Double Q-learning, Deuling Networks, Multi-step learning and Noisy Nets applied to Pong
+# DQN，Double Q-learning，Deuling Networks，Multi-step learning和Noisy Nets在Pong的应用
 
-This week we will apply Deep Q-Networks (DQN) to [Pong](https://gym.openai.com/envs/Pong-v0/).
+本周将Deep Q-Networks (DQN)应用到[Pong](https://gym.openai.com/envs/Pong-v0/).
 
 ![Pong Gif](imgs/pong_gif.gif)
 
-For the DQN implementation and the choose of the hyperparameters, I mostly followed [Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). (In the last page there is a table with all the hyperparameters.)
+我大部分按照[Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)，进行DQN实现和超参数选取。（最后一页有个表格汇总所有超参数。）
 
 To make things more interesting, I improved the basic DQN, implementing some variations like **Double Q-learning**, **Dueling networks**, **Multi-step learning** and **Noisy Nets**. You can find them summarized by [Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf)
 
