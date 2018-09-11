@@ -43,6 +43,7 @@
 > 忘记过去的人，终将重蹈覆辙。 - **George Santayana**
 
 在这一周，我们将会学习基本的强化学习内容，我们将通过评估和优化表示策略和状态的函数去定义现实世界的各类问题。
+
 ----
 
 ### 理论材料
@@ -82,7 +83,55 @@
 - 阅读该书的第3,4,5,6,7章节 [Reinforcement Learning An Introduction - Sutton, Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
 
-## Week 3 - Value Function Approximation and DQN
+## 第三周 - 值函数近似和DQN(Deep Q-Learning)
+
+本周我们学习更多高级概念，并应用深度神经网络到Q-learning算法中。
+
+----
+
+### 理论材料
+
+#### 讲座
+- #### `中文`|`优酷`[值函数近似(Value functions approximation)](https://v.youku.com/v_show/id_XMjcwNjE5MDk1Ng==.html?spm=a2h0j.11185381.listitem_page1.5!6~A&&f=49376145) - RL by David Silver
+  - Differentiable近似函数
+  - 递增方法
+  - 批方法
+
+- #### [Advanced Q-learning algorithms](https://www.youtube.com/watch?v=nZXC5OdDfs4&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3&index=7) - DRL UC Berkley by Sergey Levine
+  - Replay Buffer
+  - Double Q-learning
+  - Continous actions (NAF,DDPG)
+  - Pratical tips
+
+
+#### 论文
+
+##### 必读
+ - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/pdf/1312.5602.pdf) - 2013
+ - [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) - 2015 
+ - [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/pdf/1710.02298.pdf) - 2017
+
+##### DQN扩展
+ - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/pdf/1509.06461.pdf) - 2015
+ - [Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf) - 2015 
+ - [Dueling Network Architectures for Deep Reinforcement Learning](http://proceedings.mlr.press/v48/wangf16.pdf) - 2016 
+ - [Noisy networks for exploration](https://arxiv.org/pdf/1706.10295.pdf) - 2017 
+ - [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/pdf/1710.10044.pdf) - 2017 
+
+----
+
+### 本周项目
+
+[**DQN and some variants applied to Pong**](Week3/README.md)
+
+This week the goal is to develop a DQN algorithm to play an Atari game. To make it more interesting I developed three extensions of DQN: **Double Q-learning**, **Multi-step learning**, **Dueling networks** and **Noisy Nets**. Play with them, and if you feel confident, you can implement Prioritized replay, Dueling networks or Distributional RL. To know more about these improvements read the papers!
+
+
+-----
+
+#### 建议
+  - [Deep Reinforcement Learning in the Enterprise: Bridging the Gap from Games to Industry](https://www.youtube.com/watch?v=GOsUHlr4DKE)
+
 
 ## Week 4 - A2C and A3C
 
