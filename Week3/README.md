@@ -6,13 +6,13 @@
 
 我大部分按照[Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)，进行DQN实现和超参数选取。（最后一页有个表格汇总所有超参数。）
 
-To make things more interesting, I improved the basic DQN, implementing some variations like **Double Q-learning**, **Dueling networks**, **Multi-step learning** and **Noisy Nets**. You can find them summarized by [Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf)
+为了使项目更有趣，我改进了基本DQN, 实现了一些变型，如 **Double Q-learning**, **Dueling networks**, **Multi-step learning** and **Noisy Nets**。可以在[Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf)找到他们。
 
-### [Learn the theory](../README.md)
+### [学习理论](../README.md)
 
 ---
 
-### Double Q-learning - [Paper](https://arxiv.org/pdf/1509.06461.pdf)
+### Double Q-learning - [论文](https://arxiv.org/pdf/1509.06461.pdf)
 
 Minimize the overestimation bias introduced by the conventional Q-learning.
 
