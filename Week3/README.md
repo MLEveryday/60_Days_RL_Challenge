@@ -6,7 +6,7 @@
 
 我大部分按照 [Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) 进行 DQN 实现和超参数选取。（最后一页有个表格汇总所有超参数。）
 
-为了使项目更有趣，我改进了基本DQN, 实现了一些变型，如 **Double Q-learning**, **Dueling networks**, **Multi-step learning** and **Noisy Nets**。可以在[Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf) 找到他们。
+为了使项目更有趣，我改进了基本 DQN, 实现了一些变型，如 **Double Q-learning**, **Dueling networks**, **Multi-step learning** 和 **Noisy Nets**。可以在[Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf) 找到他们。
 
 ### [学习理论](../README.md)
 
@@ -30,8 +30,8 @@ DQN_HYPERPARAMS = {
 
 ### 竞争网络结构(Dueling networks) - [论文](http://proceedings.mlr.press/v48/wangf16.pdf)
 
-它使用2个不同的神经网络：一个输出状态值(the value of the state)，另一个输出每个动作的优势(the advantage of each action)。 
-这2个网络共享卷积编码器(convolutional encoder)。
+它使用2个不同的神经网络：一个输出状态值 (the value of the state)，另一个输出每个动作的优势 (the advantage of each action)。 
+这2个网络共享卷积编码器 (convolutional encoder)。
 
 <img src="imgs/Dueling_img.png" alt="drawing" width="400"/>
 
@@ -47,8 +47,7 @@ DQN_HYPERPARAMS = {
 
 ### 嘈杂网络(NoisyNet) - [论文](https://arxiv.org/pdf/1706.10295.pdf)
 
-为克服ε-greedy limitations，引入噪声线性层(noise linear layers)。网络会管理噪声流(noise stream)，平衡 The network will manage the noise stream to balance the exploration.
-
+为克服 ε-greedy limitations，引入噪声线性层 (noise linear layers)。网络会管理噪声流 (noise stream)，平衡探索 (exploration)。
 <img src="imgs/noisenet_formula.png" alt="drawing" width="400"/>
 
 为使用它，在*main.py*进行如下设置：
@@ -61,9 +60,9 @@ DQN_HYPERPARAMS = {
 
 ---
 
-### Multi-step
+### 多步 (Multi-step)
 
-Introduce a forward-view multi-step. Similar to TD(λ)
+引入 forward-view multi-step。类似于 TD(λ)。
 
 <img src="imgs/multistep_formula.png" alt="drawing" width="350"/>
 
@@ -83,12 +82,12 @@ NB: 如果你使用GPUs，记得修改 *main.py* 中的 DEVICE ，从 “cpu” 
 
 
 ## 为使代码更清晰，分成6个文件:
- - **main.py** 包含程序主体。它创建代理，环境，并操作游戏。每一股，更新代理。
- - **agents.py** 包含代理类，负责管理核心控制，重复操作缓冲和基本功能。
- - **central_control.py** 包含核心控制类，负责初始化DQN（包括它的变型），优化，计算损失等。
- - **buffers.py** 包含类，保存代理记忆的双端序列，并从中采样。
- - **neural_net.py** 包含DQN等代理的深度神经网络。
- - **atari_wrappers.py** 包含atari封装。https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
+ - **main.py** 包含程序主体。它创建代理，环境，并操作游戏。每一步，更新代理。
+ - **agents.py** 包含代理类，负责管理核心控制，重复操作缓冲 (reaply buffer) 和基本功能。
+ - **central_control.py** 包含核心控制类，负责初始化 DQN（包括它的变型），优化，计算损失等。
+ - **buffers.py** 包含类，保存代理记忆的双端序列 ()，并从中采样。
+ - **neural_net.py** 包含 DQN 等代理的深度神经网络。
+ - **atari_wrappers.py** 包含 atari 封装。https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
  - **utils.py**, 当前包含测试方程。
 
 
