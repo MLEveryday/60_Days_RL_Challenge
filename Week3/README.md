@@ -47,7 +47,7 @@ DQN_HYPERPARAMS = {
 
 ### 嘈杂网络(NoisyNet) - [论文](https://arxiv.org/pdf/1706.10295.pdf)
 
-An idea to overcome the ε-greedy limitations is to introduce noise linear layers. The network will manage the noise stream to balance the exploration.
+为克服ε-greedy limitations，引入噪声线性层(noise linear layers)。网络会管理噪声流(noise stream)，平衡 The network will manage the noise stream to balance the exploration.
 
 <img src="imgs/noisenet_formula.png" alt="drawing" width="400"/>
 
@@ -82,14 +82,14 @@ Also, to track the networks' results, we'll use [TensorboardX](https://github.co
 NB: If you use GPUs remember to change DEVICE from 'cpu' to 'cuda' in *main.py*.
 
 
-## To make the code more clear, it's structured in 6 files:
- - **main.py** contains the main body. It creates the agent, the environment and plays N games. For each step, it updates the agent
- - **agents.py** has the Agent class that control the central control, the replay buffer and basic functions
- - **central_control.py** contains CentralControl class. It is responsible to instantiate the DQN (or its variants), optimize it, calculate the loss ecc..
- - **buffers.py** contains the ReplayBuffer class to keep the agent's memories inside a deque list and sample from it.
- - **neural_net.py** contains the deep neural nets for the agent namely DQN, DuelingDQN and a NoisyLinear Layer for the Noisy DQN.
- - **atari_wrappers.py** include some Atari wrappers. https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
- - **utils.py**, for now, contains only a testing function.
+## 为使代码更清晰，分成6个文件:
+ - **main.py** 包含主题。它创建代理，环境，并操作游戏。每一股，更新代理。contains the main body. It creates the agent, the environment and plays N games. For each step, it updates the agent
+ - **agents.py** 包含代理类，负责管理核心控制，重复操作缓冲和基本的功能。has the Agent class that control the central control, the replay buffer and basic functions
+ - **central_control.py** 包含核心控制类，负责初始化DQN（包括它的变型），优化，计算损失等。，contains CentralControl class. It is responsible to instantiate the DQN (or its variants), optimize it, calculate the loss ecc..
+ - **buffers.py** 包含类，保存代理记忆的双端序列，并从中采样。contains the ReplayBuffer class to keep the agent's memories inside a deque list and sample from it.
+ - **neural_net.py** 包含DQN等代理的深度神经网络。contains the deep neural nets for the agent namely DQN, DuelingDQN and a NoisyLinear Layer for the Noisy DQN.
+ - **atari_wrappers.py** 包含atari封装。include some Atari wrappers. https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
+ - **utils.py**, 包含测试方程。for now, contains only a testing function.
 
 
 ## Results
