@@ -4,7 +4,7 @@
 
 ![Pong Gif](imgs/pong_gif.gif)
 
-我大部分按照[Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)，进行DQN实现和超参数选取。（最后一页有个表格汇总所有超参数。）
+我大部分按照[Mnih et al.](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)进行DQN实现和超参数选取。（最后一页有个表格汇总所有超参数。）
 
 为了使项目更有趣，我改进了基本DQN, 实现了一些变型，如 **Double Q-learning**, **Dueling networks**, **Multi-step learning** and **Noisy Nets**。可以在[Hessel et al.](https://arxiv.org/pdf/1710.02298.pdf)找到他们。
 
@@ -14,11 +14,11 @@
 
 ### Double Q-learning - [论文](https://arxiv.org/pdf/1509.06461.pdf)
 
-Minimize the overestimation bias introduced by the conventional Q-learning.
+使传统Q-learning的过高估计偏差最小化。
 
 <img src="imgs/double_Qlearning_formula.png" alt="drawing" width="400"/>
 
-To use it, in *main.py*, set
+为使用它，在*main.py*进行如下设置：
 ```python
 DQN_HYPERPARAMS = {
     'double_DQN': True,
@@ -28,14 +28,14 @@ DQN_HYPERPARAMS = {
 
 ---
 
-### Dueling networks - [Paper](http://proceedings.mlr.press/v48/wangf16.pdf)
+### 竞争网络结构(Dueling networks) - [论文](http://proceedings.mlr.press/v48/wangf16.pdf)
 
-It uses two different neural networks, one outputs the value of the state and the other the advantage of each action.
-The two NNs share the convolutional encoder.
+它使用2个不同的神经网络：一个输出状态值(the value of the state)，另一个输出每个动作的优势(the advantage of each action)。 
+这2个网络共享卷积编码器(convolutional encoder)。
 
 <img src="imgs/Dueling_img.png" alt="drawing" width="400"/>
 
-To use it, in *main.py*, set
+为使用它，在*main.py*进行如下设置：
 ```python
 DQN_HYPERPARAMS = {
     'dueling': True,
@@ -45,13 +45,13 @@ DQN_HYPERPARAMS = {
 
 ---
 
-### NoisyNet - [Paper](https://arxiv.org/pdf/1706.10295.pdf)
+### 嘈杂网络(NoisyNet) - [论文](https://arxiv.org/pdf/1706.10295.pdf)
 
 An idea to overcome the ε-greedy limitations is to introduce noise linear layers. The network will manage the noise stream to balance the exploration.
 
 <img src="imgs/noisenet_formula.png" alt="drawing" width="400"/>
 
-To use it, in *main.py*, set
+为使用它，在*main.py*进行如下设置：
 ```python
 DQN_HYPERPARAMS = {
     'noisy_net': True,
