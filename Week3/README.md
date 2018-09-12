@@ -129,7 +129,7 @@ Install gym
 ```
 
 
-## 在 Google Colab 运行 TensorBoard
+## 在 Google Colab 上运行 TensorBoard
 
 说明来自 https://www.dlology.com/blog/quick-guide-to-run-tensorboard-in-google-colab/
 
