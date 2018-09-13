@@ -10,19 +10,19 @@
 
 > 终极目标是使用这些多功能的技术，并应用他们到各种重要的真实世界问题中。**Demis Hassabis**
 
-这个项目引导你完成从最基本的到高级的AlphaGo Zero深度强化学习算法。你可以发现**按周组织的主题**和**建议学习资源**。
+这个项目引导你完成从最基本的到高级的 AlphaGo Zero 深度强化学习算法。你可以发现**按周组织的主题**和**建议学习资源**。
 同时，每周我会提供用Python实现的**应用实例**，帮助你更好地消化理论。
 
-这是原作者的第一个此类型项目，有任何想法，建议或改进都可以联系作者andrea.lonza@gmail.com。
+这是原作者的第一个此类型项目，有任何想法，建议或改进都可以联系作者 andrea.lonza@gmail.com。
 
 在整个挑战期间，作者将持续更新此项目，请保持关注。
 
-**MLEveryday提示**：以下资源尽可能换成国内可访问网站，并用标签`中文`，`英文字幕`，`英文`等区别。如果有找到中文版，请通过issue反馈。
+**MLEveryday 提示**：以下资源尽可能换成国内可访问网站，并用标签`中文`，`英文字幕`，`英文`等区别。如果有找到中文版，请通过issue反馈。
 
 ### 必备知识
-* 了解Python和PyTorch
+* 了解 Python 和 PyTorch
 * 了解机器学习
-* 了解深度学习（MLP，CNN和RNN）
+* 了解深度学习（MLP，CNN 和 RNN）
 
 ## 项目（待定）
  - **Q-learning**
@@ -75,7 +75,7 @@
 
 ### 本周项目
 
-[Q-learning解决冰冻湖问题](Week2/frozenlake_Qlearning.ipynb). 在本练习中，你将学会使用SARSA或者Q-learning.
+[Q-learning解决冰冻湖问题](Week2/frozenlake_Qlearning.ipynb). 在本练习中，你将学会使用 SARSA 或者 Q-learning.
 
 ----
 
@@ -93,7 +93,7 @@
 
 #### 讲座
 - #### `中文`|`优酷`[值函数近似(Value functions approximation)](https://v.youku.com/v_show/id_XMjcwNjE5MDk1Ng==.html?spm=a2h0j.11185381.listitem_page1.5!6~A&&f=49376145) - RL by David Silver
-  - Differentiable近似函数
+  - 差分近似函数
   - 递增方法
   - 批方法
 
