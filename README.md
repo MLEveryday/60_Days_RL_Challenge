@@ -97,7 +97,7 @@
   - 递增方法
   - 批方法
 
-- #### [Advanced Q-learning algorithms](https://www.youtube.com/watch?v=nZXC5OdDfs4&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3&index=7) - DRL UC Berkley by Sergey Levine
+- #### `英文字幕`|`bilibili`[Advanced Q-learning algorithms](https://www.bilibili.com/video/av20430507/?p=7) - DRL UC Berkley by Sergey Levine
   - Replay Buffer
   - Double Q-learning
   - Continous actions (NAF,DDPG)
@@ -111,7 +111,7 @@
  - [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) - 2015 
  - [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/pdf/1710.02298.pdf) - 2017
 
-##### DQN扩展
+##### DQN 扩展
  - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/pdf/1509.06461.pdf) - 2015
  - [Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf) - 2015 
  - [Dueling Network Architectures for Deep Reinforcement Learning](http://proceedings.mlr.press/v48/wangf16.pdf) - 2016 
@@ -124,7 +124,7 @@
 
 [**DQN and some variants applied to Pong**](Week3/README.md)
 
-This week the goal is to develop a DQN algorithm to play an Atari game. To make it more interesting I developed three extensions of DQN: **Double Q-learning**, **Multi-step learning**, **Dueling networks** and **Noisy Nets**. Play with them, and if you feel confident, you can implement Prioritized replay, Dueling networks or Distributional RL. To know more about these improvements read the papers!
+本周的目标是开发一个 DQN 算法玩 Atari 游戏。为了使项目更有趣，我开发3个 DQN 变型：**Double Q-learning**，**Multi-step learning**，**Dueling networks** 和 **Noisy Nets**。使用它们玩游戏，如果你有信心，你可以实现 Prioritized replay， Dueling networks 或者 Distributional RL。 阅读论文去了解更多改进。
 
 
 -----
