@@ -10,19 +10,19 @@
 
 > 终极目标是使用这些多功能的技术，并应用他们到各种重要的真实世界问题中。**Demis Hassabis**
 
-这个项目引导你完成从最基本的到高级的AlphaGo Zero深度强化学习算法。你可以发现**按周组织的主题**和**建议学习资源**。
+这个项目引导你完成从最基本的到高级的 AlphaGo Zero 深度强化学习算法。你可以发现**按周组织的主题**和**建议学习资源**。
 同时，每周我会提供用Python实现的**应用实例**，帮助你更好地消化理论。
 
-这是原作者的第一个此类型项目，有任何想法，建议或改进都可以联系作者andrea.lonza@gmail.com。
+这是原作者的第一个此类型项目，有任何想法，建议或改进都可以联系作者 andrea.lonza@gmail.com。
 
 在整个挑战期间，作者将持续更新此项目，请保持关注。
 
-**MLEveryday提示**：以下资源尽可能换成国内可访问网站，并用标签`中文`，`英文字幕`，`英文`等区别。如果有找到中文版，请通过issue反馈。
+**MLEveryday 提示**：以下资源尽可能换成国内可访问网站，并用标签`中文`，`英文字幕`，`英文`等区别。如果有找到中文版，请通过issue反馈。
 
 ### 必备知识
-* 了解Python和PyTorch
+* 了解 Python 和 PyTorch
 * 了解机器学习
-* 了解深度学习（MLP，CNN和RNN）
+* 了解深度学习（MLP，CNN 和 RNN）
 
 ## 项目（待定）
  - **Q-learning**
@@ -43,6 +43,7 @@
 > 忘记过去的人，终将重蹈覆辙。 - **George Santayana**
 
 在这一周，我们将会学习基本的强化学习内容，我们将通过评估和优化表示策略和状态的函数去定义现实世界的各类问题。
+
 ----
 
 ### 理论材料
@@ -74,7 +75,7 @@
 
 ### 本周项目
 
-[Q-learning解决冰冻湖问题](Week2/frozenlake_Qlearning.ipynb). 在本练习中，你将学会使用SARSA或者Q-learning.
+[Q-learning解决冰冻湖问题](Week2/frozenlake_Qlearning.ipynb). 在本练习中，你将学会使用 SARSA 或者 Q-learning.
 
 ----
 
@@ -82,7 +83,55 @@
 - 阅读该书的第3,4,5,6,7章节 [Reinforcement Learning An Introduction - Sutton, Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
 
 
-## Week 3 - Value Function Approximation and DQN
+## 第三周 - 值函数近似和DQN(Deep Q-Learning)
+
+本周我们学习更多高级概念，并应用深度神经网络到Q-learning算法中。
+
+----
+
+### 理论材料
+
+#### 讲座
+- #### `中文`|`优酷`[值函数近似(Value functions approximation)](https://v.youku.com/v_show/id_XMjcwNjE5MDk1Ng==.html?spm=a2h0j.11185381.listitem_page1.5!6~A&&f=49376145) - RL by David Silver
+  - 差分近似函数
+  - 递增方法
+  - 批方法
+
+- #### `英文字幕`|`bilibili`[Advanced Q-learning algorithms](https://www.bilibili.com/video/av20430507/?p=7) - DRL UC Berkley by Sergey Levine
+  - Replay Buffer
+  - Double Q-learning
+  - Continous actions (NAF,DDPG)
+  - Pratical tips
+
+
+#### 论文
+
+##### 必读
+ - [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/pdf/1312.5602.pdf) - 2013
+ - [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) - 2015 
+ - [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/pdf/1710.02298.pdf) - 2017
+
+##### DQN 扩展
+ - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/pdf/1509.06461.pdf) - 2015
+ - [Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf) - 2015 
+ - [Dueling Network Architectures for Deep Reinforcement Learning](http://proceedings.mlr.press/v48/wangf16.pdf) - 2016 
+ - [Noisy networks for exploration](https://arxiv.org/pdf/1706.10295.pdf) - 2017 
+ - [Distributional Reinforcement Learning with Quantile Regression](https://arxiv.org/pdf/1710.10044.pdf) - 2017 
+
+----
+
+### 本周项目
+
+[**DQN and some variants applied to Pong**](Week3/README.md)
+
+本周的目标是开发一个 DQN 算法玩 Atari 游戏。为了使项目更有趣，我开发3个 DQN 变型：**Double Q-learning**，**Multi-step learning**，**Dueling networks** 和 **Noisy Nets**。使用它们玩游戏，如果你有信心，你可以实现 Prioritized replay， Dueling networks 或者 Distributional RL。 阅读论文去了解更多改进。
+
+
+-----
+
+#### 建议
+  - [Deep Reinforcement Learning in the Enterprise: Bridging the Gap from Games to Industry](https://www.youtube.com/watch?v=GOsUHlr4DKE)
+
 
 ## Week 4 - A2C and A3C
 
