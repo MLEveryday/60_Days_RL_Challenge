@@ -67,7 +67,7 @@ DQN_HYPERPARAMS = {
 <img src="imgs/multistep_formula.png" alt="drawing" width="350"/>
 
 
-To use it, in *main.py*, set
+为使用它，在*main.py*进行如下设置：
 ```python
 DQN_HYPERPARAMS = {
     'n_multi_step': 2, # or 3
@@ -75,17 +75,17 @@ DQN_HYPERPARAMS = {
 }
 ```
 
-NB: 从今天开始，因为我们需要训练深度神经网络，我建议在 GPUs 上运行代码。如果你没有，你可以使用[Google Colab](https://colab.research.google.com/)。
+备注：从今天开始，因为我们需要训练深度神经网络，我建议在 GPUs 上运行代码。如果你没有，你可以使用[Google Colab](https://colab.research.google.com/)。
 同时，为了跟踪网络结果，我们会使用 [TensorboardX](https://github.com/lanpa/tensorboardX) (tensorboard for PyTorch)。当你在个人电脑使用 Google Colab 运行 TensorBoard 时，执行下面部分的命令。
 
-NB: 如果你使用GPUs，记得修改 *main.py* 中的 DEVICE ，从 “cpu” 改成 “cuda” 。
+备注：如果你使用GPUs，记得修改 *main.py* 中的 DEVICE ，从 “cpu” 改成 “cuda” 。
 
 
 ## 为使代码更清晰，分成6个文件:
  - **main.py** 包含程序主体。它创建代理，环境，并操作游戏。每一步，更新代理。
  - **agents.py** 包含代理类，负责管理核心控制，重复操作缓冲 (reaply buffer) 和基本功能。
  - **central_control.py** 包含核心控制类，负责初始化 DQN（包括它的变型），优化，计算损失等。
- - **buffers.py** 包含类，保存代理记忆的双端序列 ()，并从中采样。
+ - **buffers.py** 包含类，保存代理记忆的双端序列 (deque list)，并从中采样。
  - **neural_net.py** 包含 DQN 等代理的深度神经网络。
  - **atari_wrappers.py** 包含 atari 封装。https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
  - **utils.py**, 当前包含测试方程。
